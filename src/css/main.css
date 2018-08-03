@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-#container_loader{
+#container-loader{
     background-color: #E8591C;
     width: 100%;
     height: 100%;
@@ -28,9 +28,9 @@
     left: 0;
     right: 0;
     margin: auto;
-    -webkit-animation: loadingAnimation 3s linear infinite;
-    -o-animation: loadingAnimation 3s linear infinite;
-    animation: loadingAnimation 3s linear infinite;
+    -webkit-animation: loadingAnimation 2s linear infinite;
+    -o-animation: loadingAnimation 2s linear infinite;
+    animation: loadingAnimation 2s linear infinite;
 }
 
 @keyframes loadingAnimation {
