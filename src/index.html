@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAZInQn8sz4LQGT78cscX0ame_UF9aMqRA"> </script>
-    <script>
+    <title>Foodmap</title>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+             * element that contains the map. */
 
+        #map {
+            height: 100%;
+        }
+
+        /* Optional: Makes the sample page fill the window. */
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <script>
         let map;
-        const initialize = () => {
-            // buscamos en google la latitud y longitud del lugar que deseemos
+
+        const initMap=()=> {
             let center = new google.maps.LatLng(19.3911668,-99.4238184);
             map = new google.maps.Map(document.getElementById('map'), {
-               // centramos el mapa y le damos un zoom al globo terráqueo
                 center: center,
                 zoom: 20
             });
         }
-// cuando la página se cargue, llamamos a la función initialize.
-        google.maps.event.addDomListener(window, 'load', initialize);
+        google.maps.event.addDomListener(window, 'load', initMap);
+
     </script>
-    <title>Foodmap</title>
-</head>
-<body>
-    
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZInQn8sz4LQGT78cscX0ame_UF9aMqRA&callback=initMap" async
+        defer></script>
 </body>
+
 </html>
