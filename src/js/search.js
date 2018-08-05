@@ -1,6 +1,25 @@
 let map;
-const initMap =() => {
-  let center = new google.maps.LatLng(19.4913063,-99.2067212);
+
+const findMe = () => {
+if (navigator.geolocation) {
+
+} else {
+  console.log('Navegador no soporta geolocalizacion');
+}
+
+const location = (position) => {
+  let latitud = position.coords.latitude;
+  let longitud = position.coords.longitude;
+  initMap(latitud, longitud);
+
+}
+navigator.geolocation.getCurrentPosition(location, ()=> {
+  console.log('Error al obtener localizacion')
+});
+};
+
+const initMap =(latitud, longitud) => {
+  let center = new google.maps.LatLng(latitud,longitud);
   map = new google.maps.Map(document.getElementById('map'), {
     center: center,
     zoom: 15
@@ -29,5 +48,4 @@ const createMarker = (place) => {
   });
 }
 
-
-initMap();
+findMe();
