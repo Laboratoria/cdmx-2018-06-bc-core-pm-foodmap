@@ -5,13 +5,30 @@ body,
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.2em;
     font-weight: 400;
+    background-color: whitesmoke;
+    -webkit-box-shadow: inset -8px 37px 56px -23px rgba(253,202,73,1);
+    -moz-box-shadow: inset -8px 37px 56px -23px rgba(253,202,73,1);
+    box-shadow: inset -8px 37px 56px -23px rgba(253,202,73,1);
 }
 
 footer{
     bottom: 0;
-    position: fixed;
     width: 100%;
     text-align: right;
-    font-size: 1em;
+    font-size: .7em;
     padding: .5em;
 }
+
+form {
+    margin: 1em;       
+}
+
+.carousel {
+    padding: 1em;
+}
+
+#map {
+    height: 15em;
+    width: 82%;
+    margin: 1em;
+   }
