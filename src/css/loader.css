@@ -7,7 +7,10 @@
 }
 
 #container-loader{
-    background-color: #F0371A;
+    background-color: whitesmoke;
+    -webkit-box-shadow: inset -8px 37px 56px -23px rgba(253,202,73,1);
+    -moz-box-shadow: inset -8px 37px 56px -23px rgba(253,202,73,1);
+    box-shadow: inset -8px 37px 56px -23px rgba(253,202,73,1);
     width: 100%;
     height: 100%;
     position: fixed;
@@ -16,7 +19,7 @@
 }
 
 #loader{
-    border: 15px solid#E6E5C4;
+    border: 15px solid#FDCA49;
     border-top-color: #F4266A;
     border-top-style: groove;
     height: 100px;
