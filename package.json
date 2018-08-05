@@ -1,0 +1,15 @@
+{
+  "name": "foodmap",
+  "version": "1.0.0",
+  "description": "Foodmap es una web app que le permite al usuario conocer los lugares de comida más cercanos.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Diana Carrillo",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "save": "^2.3.2"
+  }
+}
