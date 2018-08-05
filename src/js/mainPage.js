@@ -1,4 +1,4 @@
-const initMap = () => {
+window.initMap = () => {
   let cdmx = { lat: 19.364456, 
     lng: -99.187620};
   let map = new google.maps.Map(
