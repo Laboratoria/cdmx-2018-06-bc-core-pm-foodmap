@@ -12,6 +12,7 @@
     text-shadow: -1px 4px 5px black;
     padding: 5%;
 }
+
 .view1 {
     padding: 0%;
     background-color: #F94049;
@@ -82,7 +83,12 @@
       opacity: 0;
     }
   }
-
+.searchpage {
+    color: black;
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+}
 
 /*
 color: #AC1D24; (red)
