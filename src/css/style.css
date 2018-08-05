@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background:#333;
+}
+.container{
+
+	overflow:hidden;
+
+}
+
+h1{
+  color: rgb(190, 97, 97);
+  text-align: center;
+  margin-top: 75%;
+  font-family: Vegur, 'PT Sans', Verdana, Sans-serif;
+}
+
+#origamifucsia{
+  width:216px;
+	height:193px;
+	background:url(../img/origami-fuscia.png) no-repeat;
+	position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+	animation: animarOrigamiFucsia 5s infinite;
+	-moz-animation: animarOrigamiFucsia 5s infinite;
+	-o-animation: animarOrigamiFucsia 5s infinite;
+	-webkit-animation: animarOrigamiFucsia 5s infinite;
+
+}
+
+
+/*--- Animaciones ---*/
+@keyframes animarOrigamiFucsia {
+	from {left: 159px; top: 135px};
+	to {left: 1010px; top: -139px};
+
+}
+
+@-moz-keyframes animarOrigamiFucsia {
+	from {left: 159px; top: 135px};
+	to {left: 1010px; top: -139px};
+
+}
+
+@-o-keyframes animarOrigamiFucsia {
+	from {left: 159px; top: 135px};
+	to {left: 1010px; top: -139px};
+
+
+}
+
+@-webkit-keyframes animarOrigamiFucsia {
+	from {left: 159px; top: 135px};
+	to {left: 1010px; top: -139px};
+
+}
+
+/*
+.loading {
+  border: 15px solid #ccc;
+  border-top-color: rgba(250, 88, 24, 0.925);
+  border-top-style: groove;
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-animation: girar 1.5s linear infinite;
+  -o-animation: girar 1.5s linear infinite;
+  animation: girar 1.5s linear infinite;
+}*/
+
