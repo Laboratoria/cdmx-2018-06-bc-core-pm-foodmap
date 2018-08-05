@@ -1,8 +1,8 @@
-//view1 loadig charge
-// window.onload {
-//     const load = document.getElementById('load');
-//     load.addEventListener('click', loading);
-//     const loading = () => {
+//configurar función timer para que la vista Splash sólo dure unos segundos
+const splash = document.getElementById('splash');
+window.onload.initialization();
+const initialization = () => {
+  splash.style.display = 'none';
+};
 
-//     };
-// };
+//API GOOGLE MAPS
