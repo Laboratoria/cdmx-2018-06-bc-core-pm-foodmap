@@ -1,0 +1,30 @@
+
+body, main {
+  background-color:#F36415;
+}
+
+h1 {
+  margin-left: 10px;
+}
+
+h2 {
+  font-family: 'Lobster', cursive;
+  margin-left: 120px;
+
+}
+.big {
+  font-size: 120px;
+  font-family: 'Lobster', cursive;
+}
+.responsive-img {
+  margin: 30px;
+}
+
+.slogan {
+  margin-top: 20px;
+}
+
+#map {
+      height: 400px;  /* The height is 400 pixels */
+      width: 100%;  /* The width is the width of the web page */
+     }
