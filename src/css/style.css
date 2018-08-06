@@ -1,0 +1,77 @@
+
+/* @media (min-width: 768px) {
+  .contenedor {
+    width: 640px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+  } */
+
+/* body {
+  background-image: url(../images/fondo1.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  opacity: 0.6;
+} */
+
+/*.opacity{
+   background-color:rgb(0,0,0);
+   opacity:0.8; }*/
+
+*,*:after, *:before{
+  margin: 0;
+  padding: 0;
+  position: fixed;
+}
+
+#container-carga{
+  background-image:url(../images/fondo2.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  transition: all 1s ease;
+  z-index: 10000;
+  align-items: center;
+}
+
+#logo {
+    opacity: 1;
+}
+
+/* #carga{
+  border: 15px solid #ccc;
+  border-top-color: #F4266A;
+  border-top-style: groove;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  animation-name: girar;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear; */
+}
+
+@@keyframes girar {
+  from {transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+}
+
+.form-logo{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: fixed;
+}

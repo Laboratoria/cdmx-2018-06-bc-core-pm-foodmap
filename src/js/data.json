@@ -1,0 +1,11 @@
+[
+  {
+    "id":1,
+    "nombre":"La Cicala",
+    "direccion":"Calle Luz Saviñón 1366, Narvarte Poniente, 03020 Ciudad de México, CDMX",
+    "horario":"L-D, 13:00-21:00 hrs",
+    "type":"Restaurante Italiano",
+    "rango_precio":
+  },
+
+]
