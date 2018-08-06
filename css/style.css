@@ -1,0 +1,63 @@
+*, * ::after, *::before{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.logo {
+  color: azure;
+  font-size: 50px;
+  height: 70px;
+  margin: 150px auto 50px auto;
+  text-align: center;
+  text-shadow: -1px 2px 2px #000;
+  width: 300px;
+}
+
+#contenedor_carga{
+  /* background-color: rgba(250, 240, 245, 0.9); */
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  z-index: 10000;
+}
+#carga{
+  border: 15px solid #ccc;
+  border-top-color: fuchsia;
+  border-top-style: groove;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-animation: girar 1.5s linear infinite;
+  -o-animation: girar 1.5s linear infinite;
+  animation: girar 1.5s linear infinite;
+}
+
+@keyframes girar {
+  from{transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+#map {
+height: 40%;
+width : 60%;
+
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+  
