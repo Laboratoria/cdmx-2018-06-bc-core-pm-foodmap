@@ -83,20 +83,26 @@
       opacity: 0;
     }
   }
-.searchpage {
+.search-view {
     color: black;
-    background-color: white;
+    background-color: rgba(252, 252, 252, 0.838);
     text-align: center;
     padding: 10px;
 }
-
-/*
+.map-title {
+    font-family: 'Luckiest Guy', cursive;
+}
+.map {
+    width:100%;
+    height:400px;
+}
+/* paleta:
 color: #AC1D24; (red)
 color: #FFFB5B; (yellow)
 color: #F94049; (red2)
 color: #1F8AC6; (blue)
 
-/*
+/* fuentes:
 font-family: 'Yanone Kaffeesatz', sans-serif;
 font-family: 'Luckiest Guy', cursive;
 font-family: 'Lilita One', cursive;
