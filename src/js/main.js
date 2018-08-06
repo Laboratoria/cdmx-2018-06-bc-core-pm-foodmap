@@ -1,13 +1,6 @@
-/* document.getElementById('pruebaM').addEventListener('click', el => {
-  $('#myModal').on('shown.bs.modal', function() {
-    $('#myInput').trigger('focus');
-  });
-}); */
- 
-// Some foursquare api with 16 places
 
 
-const url = 'https://api.foursquare.com/v2/venues/search?v=20161016&ll=34.0707998%2C%20-84.0554183&query=park&intent=browse&radius=2000&client_id=ZINY5BOEKJIGJYOFQZI4SQ1H0A1VSFAHEVJKYL12Z331B0J4&client_secret=O1L5JQCRCGABU0IV2ERHCVV3N4GWOPQARYD1PI3JTZXV0NW0';
+const url = 'https://api.foursquare.com/v2/venues/search?v=20161016&ll=19.43%2C%20-99.13&query=coffee&intent=browse&radius=2000&client_id=ZINY5BOEKJIGJYOFQZI4SQ1H0A1VSFAHEVJKYL12Z331B0J4&client_secret=O1L5JQCRCGABU0IV2ERHCVV3N4GWOPQARYD1PI3JTZXV0NW0';
 
 fetch(url)
   .then(resp => resp.json())
@@ -55,19 +48,26 @@ document.getElementById('btnSearch').addEventListener('click', el => {
   printArr(newArr);
 });
 
+let lats = 0;
+let lngs = 0;
+
 const printArr = (newArr) => {
   newArr.forEach(element => {
-    let id = element[0];  
+    let miID = element[0];
+    let newID = 'a' + miID.toString();
+    let mapID = 'map' + miID.toString();
     let name = element[1];
-    let lats = element[4];
-    let lngs = element[5];
-    
-    searchResult.innerHTML += `<button type="button" onclick="initMap()" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal">
+    let address = element[3];
+    let categorie = element[6];
+    lats = element[4];
+    lngs = element[5];
+    console.log(newID);
+    searchResult.innerHTML += `<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#${newID}">
     ${name}
   </button>
   
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="${newID}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -76,7 +76,7 @@ const printArr = (newArr) => {
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="modal-body" id="map" class="map">
+        ${address}
           
         </div>
         <div class="modal-footer">
@@ -84,17 +84,18 @@ const printArr = (newArr) => {
         </div>
       </div>
     </div>
-  </div>`;
-  initMap(lats, lngs)
+  </div>`
+  initMap(lats, lngs, newID, mapID)
   });
 };
 
 // Initialize and add the map
-function initMap(lats, lngs) {
-    console.log(lats, lngs);
+function initMap(lats, lngs, newID, mapID) {
+    console.log(lats, lngs, newID, mapID);
+
     // The location of Uluru
-    var googleLocation = {lat: 19.4178,
-      lng: -99.1869 };
+    var googleLocation = {lat: lats,
+      lng: lngs };
       // The map, centered at Uluru
     var map = new google.maps.Map(
       document.getElementById('map'), {zoom: 13,

@@ -23,7 +23,7 @@
 }
 
 .map {
-  height: 50em;  /* The height is 400 pixels */
+  height: 20em;  /* The height is 400 pixels */
   width: 100%; 
   background-color: aqua;
 }
