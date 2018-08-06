@@ -16,6 +16,16 @@
   width: 300px;
 }
 
+.logo-dos {
+  color: darkorange;
+  font-size: 20px;
+  height: 70px;
+  margin: 150px auto 50px auto;
+  text-align: center;
+  /* text-shadow: -1px 2px 2px #000; */
+  width: 300px;
+}
+
 #contenedor_carga{
   /* background-color: rgba(250, 240, 245, 0.9); */
   height: 100%;
@@ -28,7 +38,7 @@
 }
 #carga{
   border: 15px solid #ccc;
-  border-top-color: fuchsia;
+  border-top-color: darkorange;
   border-top-style: groove;
   height: 100px;
   width: 100px;
@@ -56,6 +66,7 @@ width : 60%;
 
 }
 html, body {
+    background-color: #333333;
     height: 100%;
     margin: 0;
     padding: 0;
