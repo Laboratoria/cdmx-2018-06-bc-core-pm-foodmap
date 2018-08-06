@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food Map 4 Lovers</title>
+    <!--MATERIALIZE CSS STYLE REF-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <!--Google icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One|Luckiest+Guy|Oleo+Script+Swash+Caps:700|Yanone+Kaffeesatz:700"
+        rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="container">
+    <!--Inicia la vista principal para búsqueda-->
+    <section class="search-view">
+        <div class="row col s12 m12 l12 xl12">
+            <nav>
+                <div class="nav-wrapper">
+                    <a>
+                        <h5 class="title col s9 m9 l9 xl9">FoodMap 4Lovers
+                        </h5>
+                    </a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                        <i class="material-icons">favorite</i>
+
+                        <ul class="right hide-on-med-and-down">
+                            <li>
+                                <a href="sass.html">Lugares favoritos</a>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+            </nav>
+            <ul class="sidenav search-view" id="mobile-demo">
+                <a class="title">FoodMap 4Lovers</a>
+                <li>
+                    <a href="sass.html">Mis lugares favoritos</a>
+                </li>
+            </ul>
+            <!--Mapa y selectores de filtros-->
+            <div>
+                <h4 class="map-title">Mapa</h4>
+                <div id="map" class="map-1"></div>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2018 Laboratoria CDMX
+                <a class="grey-text text-lighten-4 right">By Vaniusha</a>
+            </div>
+        </div>
+    </footer>
+    <!--Materialize min js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <!--JS Searching View link-->
+    <script src="../js/data.js"></script>
+    <script src="../js/searching.js"></script>
+    <!--Google Maps API KEY-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5heLHYLmh068Mv8YJEecY_2N77SDXOA8&callback=initMap" async
+        defer />
+
+</body>
+
+</html>
