@@ -39,9 +39,6 @@
   align-items: center;
 }
 
-#logo {
-    opacity: 1;
-}
 
 /* #carga{
   border: 15px solid #ccc;
@@ -60,12 +57,12 @@
   -webkit-animation-duration: 1.5s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear; */
-}
+/* }
 
 @@keyframes girar {
   from {transform: rotate(0deg);}
   to{transform: rotate(360deg);}
-}
+} */
 
 .form-logo{
   top: 0;
