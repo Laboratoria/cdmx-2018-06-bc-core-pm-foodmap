@@ -1,0 +1,29 @@
+@media only screen and (max-device-width: 768px) {
+    .show-mobile {
+      display: block;
+      width: 100vh
+    }
+    .hide-mobile {
+      display: none;
+    }
+  }
+
+@media only screen and (min-device-width: 769px) {
+    .show-mobile {
+      display: none;
+    }
+    .hide-mobile {
+      display: block;
+      height: 100vh;
+    }
+  }
+
+  body {
+    background-color: rgb(226, 225, 223);
+}
+
+.map {
+  height: 20em;  /* The height is 400 pixels */
+  width: 100%; 
+  background-color: rgb(108, 14, 185);
+}
