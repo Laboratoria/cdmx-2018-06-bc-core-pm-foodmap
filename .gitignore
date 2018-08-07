@@ -1,0 +1,12 @@
+#Los archivos que no quiero que suban a GitHub
+
+node_modules
+package-lock.json
+node_modules
+package-lock.json
+.DS_Store
+*.swp
+.nyc_output/
+coverage/
+node_modules/
+package-lock.json

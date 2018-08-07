@@ -1,8 +1,12 @@
-#  F O O D M A P
+Share marvelous moments with your lover
+Share in awsome and nicest places in your city
+Knew more singular and special places with your partner
+
+# F O O D M A P
 
 Crea una web-app que a través de un input pueda filtrar los restaurantes
-que se encuentran cerca de ti *(Tú decides la estructura que tendrán tus datos,
-puedes crear una lista de restaurantes en un arreglo, en un objeto, consumir una API, etc. Lo importante es que el contenido debe ser dinámico y no estático y el diseño es totalmente libre)*.
+que se encuentran cerca de ti _(Tú decides la estructura que tendrán tus datos,
+puedes crear una lista de restaurantes en un arreglo, en un objeto, consumir una API, etc. Lo importante es que el contenido debe ser dinámico y no estático y el diseño es totalmente libre)_.
 
 #### Flujo de la aplicación.
 
@@ -11,8 +15,8 @@ principal.
 ![Splash](https://github.com/AnaSalazar/curricula-js/blob/04-social-network/04-social-network/02-jquery/08-code-challenges/foodmap/splash.jpg?raw=true)
 
 En la vista principal se muestran todos los restaurantes "cerca de ti" junto
-con el input para filtrar tu elección *(Los criterios de filtrado son decisión
-tuya, puede ser por tipo de comida, costos, orden alfabético, etc.)*.
+con el input para filtrar tu elección _(Los criterios de filtrado son decisión
+tuya, puede ser por tipo de comida, costos, orden alfabético, etc.)_.
 ![vista principal](https://github.com/AnaSalazar/curricula-js/blob/04-social-network/04-social-network/02-jquery/08-code-challenges/foodmap/2.jpg?raw=true)
 
 Ya que se hizo la elección del filtro deben mostrarse únicamente aquellos
