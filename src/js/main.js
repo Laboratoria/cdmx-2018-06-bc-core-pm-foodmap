@@ -53,6 +53,7 @@ let lngs = 0;
 
 const printArr = (newArr) => {
   newArr.forEach(element => {
+    console.log('esto es' + element);
     let miID = element[0];
     let newID = 'a' + miID.toString();
     let mapID = 'map' + miID.toString();
@@ -84,23 +85,23 @@ const printArr = (newArr) => {
         </div>
       </div>
     </div>
-  </div>`
-  initMap(lats, lngs, newID, mapID)
+  </div>`;
+    initMap(lats, lngs, newID, mapID);
   });
 };
 
 // Initialize and add the map
 function initMap(lats, lngs, newID, mapID) {
-    console.log(lats, lngs, newID, mapID);
+  console.log(lats, lngs, newID, mapID);
 
-    // The location of Uluru
-    var googleLocation = {lat: lats,
-      lng: lngs };
-      // The map, centered at Uluru
-    var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 13,
-        center: googleLocation});
+  // The location of Uluru
+  var googleLocation = {lat: lats,
+    lng: lngs };
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+    document.getElementById('map'), {zoom: 13,
+      center: googleLocation});
     // The marker, positioned at Uluru
-    var marker = new google.maps.Marker({position: googleLocation,
-      map: map});
-  }
+  var marker = new google.maps.Marker({position: googleLocation,
+    map: map});
+}

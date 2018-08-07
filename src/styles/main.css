@@ -19,11 +19,11 @@
   }
 
   body {
-    background-color: rgba(255, 217, 0, 0.048);
+    background-color: rgb(226, 225, 223);
 }
 
 .map {
   height: 20em;  /* The height is 400 pixels */
   width: 100%; 
-  background-color: aqua;
+  background-color: rgb(108, 14, 185);
 }
