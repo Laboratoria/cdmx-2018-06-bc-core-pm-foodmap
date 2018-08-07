@@ -1,15 +1,26 @@
-.t-font{
-    font-family: 'Gochi Hand', cursive; 
+.t-font {
+    font-family: 'Gochi Hand', cursive;
 }
-.p-font{
+
+.p-font {
     font-family: 'Gochi Hand', cursive;
     font-size: 2em;
 }
 
-.h-col{
-    background-color: 	#FFA500;
+.h-col {
+    background-color: #FFA500;
 }
 
-.logo{
+.logo {
     margin-top: 2em;
 }
+
+#map {
+    height: 100%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
