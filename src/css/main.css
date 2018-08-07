@@ -92,9 +92,9 @@
 .map-title {
     font-family: 'Luckiest Guy', cursive;
 }
-.map {
-    width:100%;
-    height:400px;
+#map {
+    width:500px;
+    height:500px;
 }
 /* paleta:
 color: #AC1D24; (red)

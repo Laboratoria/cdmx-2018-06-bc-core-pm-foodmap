@@ -32,7 +32,7 @@
 
                         <ul class="right hide-on-med-and-down">
                             <li>
-                                <a href="sass.html">Lugares favoritos</a>
+                                <a href="../views/favorites.html">Lugares favoritos</a>
                             </li>
                         </ul>
                     </a>
@@ -41,15 +41,42 @@
             <ul class="sidenav search-view" id="mobile-demo">
                 <a class="title">FoodMap 4Lovers</a>
                 <li>
-                    <a href="sass.html">Mis lugares favoritos</a>
+                    <a>Mis lugares favoritos</a>
                 </li>
             </ul>
             <!--Mapa y selectores de filtros-->
             <div>
                 <h4 class="map-title">Mapa</h4>
-                <div id="map" class="map-1"></div>
             </div>
+
         </div>
+    </section>
+    <div id="map"></div>
+    <section>
+
+
+        <div class="input-field col s12">
+            <select>
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Loveley Coffe House
+                    <i class="material-icons">local_cafe</i>
+                </option>
+                <option value="2">Sweet Patisserie
+                    <i class="material-icons">cake</i>
+                </option>
+                <option value="3">Meals to Share
+                    <i class="material-icons">restaurant</i>
+                </option>
+                <option value="3">Park to walk
+                    <i class="material-icons">local_florist</i>
+                </option>
+                <option value="3">Drinks & Beer Factory
+                    <i class="material-icons">local_drink</i>
+                </option>
+            </select>
+            <label>Materialize Select</label>
+        </div>
+
     </section>
     <!--Footer-->
     <footer>
@@ -62,12 +89,12 @@
     </footer>
     <!--Materialize min js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <!--JS Searching View link-->
     <script src="../js/data.js"></script>
-    <script src="../js/searching.js"></script>
     <!--Google Maps API KEY-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5heLHYLmh068Mv8YJEecY_2N77SDXOA8&callback=initMap" async
-        defer />
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDj6zFo4FTho_JNfV7P25aF819UnTc3Um4" async defer />
+    <!--JS links-->
+
+    <script src="../js/searching.js"></script>
 
 </body>
 
