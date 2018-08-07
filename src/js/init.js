@@ -1,12 +1,12 @@
 // Initialize Firebase
 window.initializeFirebase = () => {
   firebase.initializeApp({
-    apiKey: 'AIzaSyCiLDBi-b0s3qQ7StQwIpepNwyEX65LHyo',
-    authDomain: 'affamato-project.firebaseapp.com',
-    databaseURL: 'https://affamato-project.firebaseio.com',
-    projectId: 'affamato-project',
-    storageBucket: 'affamato-project.appspot.com',
-    messagingSenderId: '371498322149'
+    apiKey: 'AIzaSyDTnRlgj3YITuH0fTWO7Qv_Cg8aCXBWH80',
+    authDomain: 'food-map-2.firebaseapp.com',
+    databaseURL: 'https://food-map-2.firebaseio.com',
+    projectId: 'food-map-2',
+    storageBucket: '',
+    messagingSenderId: '330495915253'
   });
 };
 

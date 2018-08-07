@@ -30,6 +30,9 @@ box-shadow: inset 31px 29px 93px -1px rgba(253,202,73,1);
     color: #FDCA49
 }
 
+.card-body{
+    color: #A4243B;
+}
 .card-text{
     font-size: initial;
 }
