@@ -46,6 +46,16 @@ window.currentPosition = () => {
   navigator.geolocation.getCurrentPosition(success, error, options);
 };
 
+window.searchData = (data, searchBy) => {
+  db.collection('places').get()
+    .then(place => {
+      place.forEach(element => {
+        
+      });
+    });
+};
+
+
 window.getRankingPosition = (position) => {
   let ranked = '';
   if (position === 'Aceptable') {
