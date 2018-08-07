@@ -65,10 +65,6 @@
                   <input class="form-check-input" type="checkbox" name="searchByOption" value="address">
                   <label class="form-check-label" for="inlineCheckbox3">Dirección</label>
                 </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" name="searchByOption" value="rate">
-                  <label class="form-check-label" for="inlineCheckbox3">Valoración</label>
-                </div>
                 <div class="input-group-btn">
                     <button id="search-btn" class="btn btn-default" type="button">
                       <i class="fas fa-search"></i>
@@ -79,7 +75,7 @@
           </div>
         </form>
         <div id="searchResults">
-          
+
         </div>
       </div>
       <div class="col-12 col-md-6">
@@ -102,6 +98,9 @@
   <!-- Adding Google Map-->
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAG1Z3w5WZSs6K9mYAmFvaWo9p6gH0r43o&callback=currentPosition">
   </script>
+
+  <!-- Addign SweetAlert for alerts -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
 
   <script src="../js/init.js"></script>
   <script src="../js/mainPage.js"></script>
