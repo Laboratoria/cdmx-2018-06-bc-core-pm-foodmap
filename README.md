@@ -4,6 +4,14 @@ Crea una web-app que a través de un input pueda filtrar los restaurantes
 que se encuentran cerca de ti *(Tú decides la estructura que tendrán tus datos,
 puedes crear una lista de restaurantes en un arreglo, en un objeto, consumir una API, etc. Lo importante es que el contenido debe ser dinámico y no estático y el diseño es totalmente libre)*.
 
+
+## Consideraciones particulares
+Bajo el requerimiento de crear una web-app que a través de un input pudiera filtrar los restaurantes
+que se encuentran cerca de ti, se hizo un replanteamiento de la idea con las siguientes consideraciones.
+ - Antes de ser lanzado a un target de usuarios en general, se planteo lanzar una primera versión para personas que viven o trabajan en la delegación Benito Juarez de la Ciudad de México.
+ - Con base en el punto anterior se ofrece un listado de restaurantes ubicados en esta demarcación.
+ - Dado que no se ofrece la opción de geolocalización de los lugares listados mediante un mapa, se considero conveniente cambiar el nombre de la web-app de foodmap a foodlooking.
+
 #### Flujo de la aplicación.
 
 Vista splash con duración de 2 segundos que redirecciona a tu vista
