@@ -6,11 +6,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 //inicializador para options selector
-// document.addEventListener('DOMContentLoaded', function() {
-//   var elems = document.querySelectorAll('select');
-//   var instances = M.FormSelect.init(elems, options);
-//   console.log(instances);
-// });
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('select');
+  var instances = M.FormSelect.init(elems, options);
+  console.log(instances);
+});
 
 // //inicializador del mapa
 // const mapInit = () => {
