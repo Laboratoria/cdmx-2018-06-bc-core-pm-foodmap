@@ -1,6 +1,11 @@
 let searchAPI = document.getElementById('searchAPI');
 let searchResultAPI = document.getElementById('searchResultAPI');
 let url;
+
+
+let placeLat = 19.43;
+let placeLng = -99.13;
+
 /* Se trae búsqueda del usuario por medio de un input, se substituyen los espacios
 por %20, ya que corresponde al formato de búsqueda de Foursquare */
 document.getElementById('btnSearchAPI').addEventListener('click', el => {
@@ -9,8 +14,8 @@ document.getElementById('btnSearchAPI').addEventListener('click', el => {
 
   // Establecemos parámetros para API de Foursquare
   let mainUrl = 'https://api.foursquare.com/v2/venues/search?v=20161016&ll=';
-  let lat = 19.43;
-  let lng = -99.13;
+  let lat = placeLat;
+  let lng = placeLng;
   let queryS = finalVal;
     
   url = mainUrl + lat + '%2C%20' + lng + '&query=' + queryS + 
@@ -52,9 +57,6 @@ const gettingData = (venues) => {
 };
 
 
-let placeLat = 0;
-let placeLng = 0;
-
 const printArr = (newArr) => {
   let newID = newArr[0]; 
   let placeID = 'a' + newID.toString(); 
@@ -91,3 +93,13 @@ const printArr = (newArr) => {
     </div>
   </div>`;
 };
+
+function initMap() {
+  // The location of Uluru
+  var googleLocation = {lat: placeLat, lng: placeLng};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 15, center: googleLocation});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: googleLocation, map: map});
+}
