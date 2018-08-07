@@ -47,25 +47,41 @@ window.currentPosition = () => {
 };
 
 window.searchData = (data, searchBy) => {
-  db.collection('places').get()
-    .then(place => {
-      place.forEach(element => {
-        
+  if (searchBy === 'price') {
+    db.collection('places').get()
+      .then(result => {
+        result.forEach(place => {
+          let elementToPrint = '';
+          let priceField = place.data().price;
+          let searchResult = priceField.indexOf(data);
+          let grade = getRankingPosition(place.data().rate);
+          if (searchResult !== -1) {
+            elementToPrint += `<div class="card">
+                        <img class="card-img-top" src="${place.data().url}">
+                        <div class="card-body">
+                          <h4 class="card-title">${place.data().name}</h4>
+                          <p class="card-text">${place.data().address}.</p>
+                          <p class="card-text">${grade}</p>
+                        </div>
+                      </div>`;
+            document.getElementById('searchResults').innerHTML += elementToPrint;
+          }
+        });
       });
-    });
+  }
 };
 
 
 window.getRankingPosition = (position) => {
   let ranked = '';
   if (position === 'Aceptable') {
-    ranked += `<i class="fas fa-cookie-bite"></i>`;
+    ranked += '<i class="fas fa-cookie-bite"></i>';
   }
   if (position === 'Bueno') {
-    ranked += `<i class="fas fa-cookie-bite"></i><i class="fas fa-cookie-bite"></i>`;
+    ranked += '<i class="fas fa-cookie-bite"></i><i class="fas fa-cookie-bite"></i>';
   }
   if (position === 'Excelente') {
-    ranked += `<i class="fas fa-cookie-bite"></i><i class="fas fa-cookie-bite"></i><i class="fas fa-cookie-bite"></i>`;
+    ranked += '<i class="fas fa-cookie-bite"></i><i class="fas fa-cookie-bite"></i><i class="fas fa-cookie-bite"></i>';
   }
   return ranked;
 };

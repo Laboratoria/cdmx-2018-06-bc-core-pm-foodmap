@@ -29,3 +29,19 @@ box-shadow: inset 31px 29px 93px -1px rgba(253,202,73,1);
     background-color: #A4243B;
     color: #FDCA49
 }
+
+.card {
+    display: inline-block;
+    font-size: .4em;
+    width: 27%;
+    margin: .3em;
+
+}
+
+.card-title{
+    font-size: 1.2em;
+}
+
+#searchResults {
+    text-align: center;
+}
