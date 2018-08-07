@@ -56,13 +56,15 @@ window.searchData = (data, searchBy) => {
           let searchResult = priceField.indexOf(data);
           let grade = getRankingPosition(place.data().rate);
           if (searchResult !== -1) {
-            elementToPrint += `<div class="card">
+            elementToPrint += `<div class="col-md-12 mt-3">
+            <div class="card">
                         <img class="card-img-top" src="${place.data().url}">
                         <div class="card-body">
                           <h4 class="card-title">${place.data().name}</h4>
                           <p class="card-text">${place.data().address}.</p>
                           <p class="card-text">${grade}</p>
                         </div>
+                      </div>
                       </div>`;
             document.getElementById('searchResults').innerHTML += elementToPrint;
           }
