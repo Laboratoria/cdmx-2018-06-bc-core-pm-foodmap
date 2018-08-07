@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel='stylesheet' type='text/css' href='../css/styles.css' />
+   <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <title>Yummy Finder</title>
+</head>
+
+<body>
+   <section class="container-fluid">
+       <header class="h-col row">
+           <img class="logo center-align responsive-img" src="../img/logo.png" alt="logo-yummy">
+       </header>
+       <main class="row">
+           <button id="btnLocation" class="bttn col s1 offset-s5"><i class="material-icons">place</i></button>
+           <div id="map"></div>
+           <div class="center-align">
+
+               <input class="p-font col s8 offset-s1" id="searchFood" placeholder="¿Qué comida buscas?">
+               <button class="bttn col s2" id="btnSearch">
+                   <i class="material-icons">search</i>
+               </button>
+           </div>
+           <div id="photo-food"></div>
+       </main>
+   </section>
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUaz17mTrasil6s3EjOP1NkpWqxRooDns&libraries=places"></script>
+   <script type="text/JavaScript" src="../js/maps.js"></script>
+</body>
+
+</html>
+
