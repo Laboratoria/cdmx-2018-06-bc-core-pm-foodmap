@@ -22,6 +22,7 @@ box-shadow: inset 31px 29px 93px -1px rgba(253,202,73,1);
     border-right: 0;
     border-bottom-width: medium;
     border-bottom-color: #A4243B;
+    height: auto;
 }
 
 .btn-default {
