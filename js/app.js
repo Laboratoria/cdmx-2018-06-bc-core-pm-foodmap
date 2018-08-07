@@ -1,4 +1,3 @@
-
 var map;
 function initMap() {
     var cdmx = {lat: 19.4326077, lng: -99.13320799999997};
@@ -6,7 +5,7 @@ function initMap() {
     map = new google.maps.Map(
         document.getElementById('map'), {
             center: cdmx,
-            zoom: 13 
+            zoom: 12
         });
     // Pin en CDMX
     // var marker = new google.maps.Marker({position: cdmx, map: map});
@@ -24,7 +23,7 @@ function callback(results, status){
     if(status == google.maps.places.PlacesServiceStatus.OK){
         for(var i = 0; i < results.length; i++){
             createMarker(results[i]);
-            console.log(results)
+            addNew(results);
         }
     }
 }
@@ -34,4 +33,7 @@ function createMarker(place){
         map : map,
         position : place.geometry.location
     })
+}
+const addNew = () =>{
+
 }
