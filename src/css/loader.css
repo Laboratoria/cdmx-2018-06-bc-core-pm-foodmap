@@ -1,0 +1,23 @@
+*,*:after, ::before{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#container-loader{
+    background-color: whitesmoke;
+    -webkit-box-shadow: inset -8px 37px 56px -23px rgba(253,202,73,1);
+    -moz-box-shadow: inset -8px 37px 56px -23px rgba(253,202,73,1);
+    box-shadow: inset -8px 37px 56px -23px rgba(253,202,73,1);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    transition: all 1s ease;
+    z-index: 10000;
+}
+
+.h-100v{
+    height: 100vh;
+}

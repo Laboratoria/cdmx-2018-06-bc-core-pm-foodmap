@@ -1,0 +1,42 @@
+nav {
+    background-color: #FDCA49;
+    -webkit-box-shadow: inset 11px 13px 80px -4px rgba(164,36,59,0.57);
+-moz-box-shadow: inset 11px 13px 80px -4px rgba(164,36,59,0.57);
+box-shadow: inset 11px 13px 80px -4px rgba(164,36,59,0.57);
+}
+
+footer{
+    -webkit-box-shadow: inset 31px 29px 93px -1px rgba(253,202,73,1);
+-moz-box-shadow: inset 31px 29px 93px -1px rgba(253,202,73,1);
+box-shadow: inset 31px 29px 93px -1px rgba(253,202,73,1);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #A4243B;
+}
+
+.form-control {
+    border-bottom-style: groove;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-width: medium;
+    border-bottom-color: #A4243B;
+    height: auto;
+}
+
+.btn-default {
+    background-color: #A4243B;
+    color: #FDCA49
+}
+
+.card-body{
+    color: #A4243B;
+}
+.card-text{
+    font-size: initial;
+}
+
+#searchResults {
+    text-align: center;
+}
