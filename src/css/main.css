@@ -29,8 +29,10 @@ form {
 }
 
 #map {
-    height: 17em;
-    width: 82%;
+    height: 90%;
+    width: 90%;
     margin: 1em;
-    text-align: center;
+    padding: .5em;
+    position: relative;
+    margin-top: 3em;
    }

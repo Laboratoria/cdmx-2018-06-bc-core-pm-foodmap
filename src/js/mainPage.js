@@ -3,6 +3,8 @@ let db = firebase.firestore();
 let dbSettings = { timestampsInSnapshots: true };
 db.settings(dbSettings);
 
+loadMap('map');
+
 const searchData = (data, searchBy) => {
   if (searchBy === 'price') {
     db.collection('places').get()
