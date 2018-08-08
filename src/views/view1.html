@@ -32,7 +32,7 @@
 
                         <ul class="right hide-on-med-and-down">
                             <li>
-                                <a href="../views/favorites.html">Lugares favoritos</a>
+                                <a href="../views/favorites.html">Our Favorite Places</a>
                             </li>
                         </ul>
                     </a>
@@ -41,7 +41,7 @@
             <ul class="sidenav search-view" id="mobile-demo">
                 <a class="title">FoodMap 4Lovers</a>
                 <li>
-                    <a>Mis lugares favoritos</a>
+                    <a>Our Favorite Places</a>
                 </li>
             </ul>
             <!--Mapa y selectores de filtros-->
@@ -50,31 +50,35 @@
             </div>
 
         </div>
-    </section>
+        <div class="input-field col s12 m12 l12 xl12">
+            <select class="browser-default">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Lovely Coffe House to talk a lot
+                </option>
+                <option value="2">Sweet Patisserie to share tenderness
+                </option>
+                <option value="3">Meals to treat the life assets
+                </option>
+                <option value="3">Park to walk and meet each other
+                </option>
+                <option value="3">Drinks & Beer Factory to drunk love
+                </option>
+            </select>
+        </div>   
+    <!--Div para pintar mapa-->
     <div id="map"></div>
-    <div class="input-field col s12">
-        <select>
-            <option value="" disabled selected>Choose your option</option>
-            <option value="1">Loveley Coffe House
-                <i class="material-icons">local_cafe</i>
-            </option>
-            <option value="2">Sweet Patisserie
-                <i class="material-icons">cake</i>
-            </option>
-            <option value="3">Meals to Share
-                <i class="material-icons">restaurant</i>
-            </option>
-            <option value="3">Park to walk
-                <i class="material-icons">local_florist</i>
-            </option>
-            <option value="3">Drinks & Beer Factory
-                <i class="material-icons">local_drink</i>
-            </option>
-        </select>
-        <label>Materialize Select</label>
-    </div>
-    <!--Footer-->
+</section>
+<!--Carrusel ilustrativo-->
+<div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="../images/couple-1.jpg"></a>
+        <a class="carousel-item" href="#two!"><img src="../images/couple-2.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="../images/couple-3.jpg"></a>
+        <a class="carousel-item" href="#four!"><img src="../images/couple-3.jpg"></a>
+        <a class="carousel-item" href="#five!"><img src="../images/couple.gif"></a>
+      </div>
+      
     <footer>
+            
         <div class="footer-copyright">
             <div class="container">
                 © 2018 Laboratoria CDMX
@@ -85,9 +89,9 @@
     <!--Materialize min js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <script src="../js/data.js"></script>
-    <!--Google Maps API KEY-->
+    <!--Google Maps API KEY
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDj6zFo4FTho_JNfV7P25aF819UnTc3Um4&libraries=places" async
-        defer />
+        defer /> -->
     <!--JS links-->
     <script src="../js/searching.js"></script>
 

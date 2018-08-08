@@ -5,24 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
   console.log(instances);
 });
 
-//inicializador para options selector
+//inicializador para carrusel
 document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('select');
-  var instances = M.FormSelect.init(elems, options);
-  console.log(instances);
+  var elems = document.querySelectorAll('.carousel');
+  var instances = M.Carousel.init(elems, options);
 });
 
-// //inicializador del mapa
-// const mapInit = () => {
-//   const ubicacion = new findUserLoc(() => {
-//     const options1 = {
-//       center: {
-//         lat: ubicacion.latitude,
-//         lng: ubicacion.longitude
-//       },
-//       zoom: 16
-//     };
-//     let map = document.getElementById('map');
-//     const mapaDraw = new google.maps.Map(map, options1);
-//   });
-// };
