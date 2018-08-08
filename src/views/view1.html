@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food Map 4 Lovers</title>
+    <!--MATERIALIZE CSS STYLE REF-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <!--Google icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One|Luckiest+Guy|Oleo+Script+Swash+Caps:700|Yanone+Kaffeesatz:700"
+        rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="container">
+    <!--Inicia la vista principal para búsqueda-->
+    <section class="search-view">
+        <div class="row col s12 m12 l12 xl12">
+            <nav>
+                <div class="nav-wrapper">
+                    <a>
+                        <h5 class="title col s9 m9 l9 xl9">FoodMap 4Lovers
+                        </h5>
+                    </a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                        <i class="material-icons">favorite</i>
+
+                        <ul class="right hide-on-med-and-down">
+                            <li>
+                                <a href="../views/favorites.html">Our Favorite Places</a>
+                            </li>
+                        </ul>
+                    </a>
+                </div>
+            </nav>
+            <ul class="sidenav search-view" id="mobile-demo">
+                <a class="title">FoodMap 4Lovers</a>
+                <li>
+                    <a>Our Favorite Places</a>
+                </li>
+            </ul>
+            <!--Mapa y selectores de filtros-->
+            <div>
+                <h4 class="map-title">Mapa</h4>
+            </div>
+
+        </div>
+        <div class="input-field col s12 m12 l12 xl12">
+            <select class="browser-default">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Lovely Coffe House to talk a lot
+                </option>
+                <option value="2">Sweet Patisserie to share tenderness
+                </option>
+                <option value="3">Meals to treat the life assets
+                </option>
+                <option value="3">Park to walk and meet each other
+                </option>
+                <option value="3">Drinks & Beer Factory to drunk love
+                </option>
+            </select>
+        </div>   
+    <!--Div para pintar mapa-->
+    <div id="map"></div>
+</section>
+<!--Carrusel ilustrativo-->
+<div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="../images/couple-1.jpg"></a>
+        <a class="carousel-item" href="#two!"><img src="../images/couple-2.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="../images/couple-3.jpg"></a>
+        <a class="carousel-item" href="#four!"><img src="../images/couple-3.jpg"></a>
+        <a class="carousel-item" href="#five!"><img src="../images/couple.gif"></a>
+      </div>
+      
+    <footer>
+            
+        <div class="footer-copyright">
+            <div class="container">
+                © 2018 Laboratoria CDMX
+                <a class="grey-text text-lighten-4 right">By Vaniusha</a>
+            </div>
+        </div>
+    </footer>
+    <!--Materialize min js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="../js/data.js"></script>
+    <!--Google Maps API KEY
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDj6zFo4FTho_JNfV7P25aF819UnTc3Um4&libraries=places" async
+        defer /> -->
+    <!--JS links-->
+    <script src="../js/searching.js"></script>
+
+</body>
+
+</html>
