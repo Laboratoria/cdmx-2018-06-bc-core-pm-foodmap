@@ -23,9 +23,10 @@ function callback(results, status) {
     if (status == google.maps.places.PlacesServiceStatus.OK) {
         for (var i = 0; i < results.length; i++) {
             createMarker(results[i]);
-            filter(results);
             // console.log(results[i]);
+
         }
+        filter(results);
     }
 
 }
@@ -38,16 +39,44 @@ function createMarker(place) {
     })
 }
 
+let space = document.getElementById('space');
+
 const filter = (results) => {
-    for (let i = 0;i <= results.length; i++) {
-        name = results[i].name;
-        rating = results[i].rating;
-        //console.log(rating);
-        vicinity = results[i].vicinity;
-        //console.log(vicinity); 
-        console.log(name, rating, vicinity);
-    }  
-}
+    console.log(results);
+    results.forEach ((result) => {
+        let print = `  <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+<p class="card-text">${result.name}</p>
+  </a>
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle">${result.name}</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="card-text">${result.rating}</p>
+          <p class="card-text">${result.vicinity}</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>`
+  space.innerHTML += print;
+    })
+    
+};
+
+
+
+
+
+
+
 
 
 
